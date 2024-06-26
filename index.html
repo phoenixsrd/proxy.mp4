@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proxy e Reprodutor de Vídeos</title>
-<!-- Estilos para o reprodutor de vídeo (exemplo com Video.js) -->
 <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
 <style>
     body { font-family: Arial, sans-serif; }
@@ -14,30 +12,25 @@
 <body>
 
 <div class="container">
-    <h1>Proxy e Reprodutor de Vídeos</h1>
 
-    <!-- Formulário para inserir a URL do vídeo -->
+    <!-- Formulário Para Inserir A URL Do Vídeo -->
     <form action="" method="get">
-        <label for="videoUrl">Insira a URL do vídeo do GitHub Releases:</label>
-        <input type="text" id="videoUrl" name="url" placeholder="Insira a URL do vídeo...">
-        <button type="submit">Reproduzir</button>
-    </form>
 
-    <!-- Div para exibir o reprodutor de vídeo -->
+    <!-- Div Para Exibir O Reprodutor De Vídeo -->
     <div class="video-container">
         <video id="my-video" class="video-js" controls preload="auto" width="640" height="264">
             <source src="<?php echo htmlspecialchars($videoUrl); ?>" type="video/mp4">
             <p class="vjs-no-js">
-                Para assistir este vídeo, ative o JavaScript e considere atualizar para um navegador que suporte vídeos HTML5.
+                Para Assistir Este Vídeo, Ative O JavaScript E Considere Atualizar Para Um Navegador Que Suporte vídeos HTML5.
             </p>
         </video>
     </div>
 </div>
 
-<!-- Scripts para o reprodutor de vídeo (exemplo com Video.js) -->
+<!-- Scripts Para O Reprodutor De Vídeo -->
 <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 <script>
-    // Inicializa o reprodutor de vídeo
+    // Inicializa O Reprodutor De vídeo
     var player = videojs('my-video');
 </script>
 
