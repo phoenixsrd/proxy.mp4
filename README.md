@@ -1,7 +1,5 @@
 # código de arquivo completo= proxy.php
 
-
-
 <?php
 // Verifica Se A URL Do Vídeo Foi Fornecida
 if (!isset($_GET['url'])) {
