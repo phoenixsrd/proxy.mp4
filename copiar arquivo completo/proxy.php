@@ -1,15 +1,13 @@
-# código de arquivo completo= proxy.php
-
 <?php
-Verifica Se A URL Do Vídeo Foi Fornecida
+// Verifica Se A URL Do Vídeo Foi Fornecida
 if (!isset($_GET['url'])) {
     die('URL Do Vídeo Não Especificada.');
 }
 
-URL Do Vídeo
+// URL Do Vídeo
 $videoUrl = $_GET['url'];
 
-Função Para Buscar O Conteúdo Da URL Alvo
+// Função Para Buscar O Conteúdo Da URL Alvo
 function fetchURL($url) {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -19,10 +17,10 @@ function fetchURL($url) {
     return $response;
 }
 
-Obtém O Conteúdo Da URL Alvo Via Proxy
+// Obtém O Conteúdo Da URL Alvo Via Proxy
 $content = fetchURL($videoUrl);
 
-Exibe O Conteúdo Como Resposta
+// Exibe O Conteúdo Como Resposta
 echo $content;
 ?>
 
