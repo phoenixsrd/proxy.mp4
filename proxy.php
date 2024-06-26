@@ -1,7 +1,7 @@
 <?php
 // Verifica Se A URL Do Vídeo Foi Fornecida
 if (!isset($_GET['url'])) {
-    die('URL do vídeo não especificada.');
+    die('URL Do Vídeo Não Especificada.');
 }
 
 // URL Do Vídeo
