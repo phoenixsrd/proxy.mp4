@@ -1,11 +1,11 @@
 <?php
 // Verifica Se A URL Do Vídeo Foi Fornecida
-if (!isset($_GET['//pomf2.lain.la/f/wy0tf11h.mp4'])) {
+if (!isset($_GET['url'])) {
     die('URL Do Vídeo Não Especificada.');
 }
 
 // URL Do Vídeo
-$videoUrl = $_GET['url'];
+$videoUrl = $_GET['//pomf2.lain.la/f/wy0tf11h.mp4'];
 
 // Função Para Buscar O Conteúdo Da URL Alvo
 function fetchURL($url) {
