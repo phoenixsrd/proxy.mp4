@@ -1,9 +1,9 @@
 <?php
-if (!isset($_GET['//pomf2.lain.la/f/wy0tf11h.mp4'])) {
+if (!isset($_GET['url'])) {
     die('URL Do Vídeo Não Especificada.');
 }
 
-$videoUrl = $_GET['//pomf2.lain.la/f/wy0tf11h.mp4'];
+$videoUrl = $_GET['url'];
 
 function fetchURL($url) {
     $ch = curl_init();
