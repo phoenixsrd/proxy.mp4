@@ -1,6 +1,6 @@
 <?php
 // Verifica Se A URL Do Vídeo Foi Fornecida
-if (!isset($_GET['url'])) {
+if (!isset($_GET['//pomf2.lain.la/f/wy0tf11h.mp4'])) {
     die('URL Do Vídeo Não Especificada.');
 }
 
